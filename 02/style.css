@@ -1,0 +1,143 @@
+/* 'Global reset' -> fazer em todo novo projeto */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif, Arial, Helvetica;
+  font-size: 18px;
+  position: relative;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: rgb(43, 157, 196);
+  text-transform: uppercase;
+  margin-left: 40px;
+  font-style: italic;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+/* article p:nth-child(2) {
+  color: rgb(150, 14, 14);
+} */
+
+aside {
+  background-color: rgb(240, 240, 240);
+  border: 3px solid black;
+  padding: 50px 0px;
+}
+
+.header-1 {
+  width: 100%;
+  height: 110px;
+  padding-top: 30px;
+  background-color: rgb(240, 240, 240);
+}
+
+.header-2 {
+  margin: 30px 0;
+  position: relative;
+}
+
+.top {
+  width: 100%;
+  height: 10px;
+  background-color: rgb(43, 157, 196);
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.mdnWeb {
+  margin-bottom: 50px;
+}
+
+.ulMenu {
+  list-style: none;
+}
+
+nav a:link {
+  display: inline-block;
+  margin-left: 45px;
+  margin-top: 15px;
+}
+
+.related {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+button {
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* Links */
+
+a:link {
+  text-decoration: none;
+  color: rgb(43, 157, 196);
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(43, 157, 196);
+}
+
+/* Images */
+
+.girlIMG {
+  width: 70px;
+  height: auto;
+}
+
+.postIMG {
+  width: 50%;
+  height: auto;
+}
+
+/* Irmãos adjacentes (+) */
+h3 + p::first-line {
+  color: red;
+}
+
+/* After/Before */
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: yellow;
+  padding: 3px 8px; /*Para ter paddin precisa ser inline-block*/
+  position: absolute;
+  right: 340px;
+  top: -20px;
+}
