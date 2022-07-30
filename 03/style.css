@@ -1,0 +1,190 @@
+/* 'Global reset' + box-sizing-> fazer em todo novo projeto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SEÇÕES DA PÁGINA */
+body {
+  font-family: sans-serif, Arial, Helvetica;
+  font-size: 18px;
+  position: relative;
+  border-top: 10px solid rgb(43, 157, 196);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-1 {
+  height: 80px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: rgb(240, 240, 240);
+  margin-bottom: 30px;
+}
+
+nav {
+  float: right;
+  margin-top: 7px;
+}
+
+article {
+  width: 850px;
+  float: left;
+  position: relative;
+}
+
+.header-2 {
+  position: relative;
+}
+
+aside {
+  width: 300px;
+  float: right;
+  background-color: rgb(240, 240, 240);
+  border-top: 4px solid rgb(43, 157, 196);
+  border-bottom: 4px solid rgb(43, 157, 196);
+  padding: 40px;
+}
+
+footer {
+  float: right;
+  font-size: 16px;
+  clear: both;
+  width: 100%;
+}
+
+/* ELEMENTOS MENORES */
+
+h1,
+h2,
+h3 {
+  color: rgb(43, 157, 196);
+}
+
+h1 {
+  color: rgb(43, 157, 196);
+  text-transform: uppercase;
+  margin-left: 40px;
+  font-size: 25px;
+  font-style: italic;
+  float: left;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2,
+h3,
+h4 {
+  margin-bottom: 15px;
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+/* article p:nth-child(2) {
+  color: rgb(150, 14, 14);
+} */
+
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.mdnWeb {
+  margin-bottom: 50px;
+}
+
+.ulMenu {
+  list-style: none;
+}
+
+nav a:link {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.related {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+ul,
+ol {
+  margin-left: 20px;
+}
+
+button {
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+/* Links */
+
+a:link {
+  text-decoration: none;
+  color: rgb(43, 157, 196);
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(43, 157, 196);
+}
+
+/* Images */
+
+.girlIMG {
+  width: 70px;
+}
+
+.author {
+  /* padding-top: 10px; */
+  /* margin-left: 20px; */
+  /* width: 500px; */
+  float: right;
+  /* display: inline; */
+}
+
+.postIMG {
+  width: 100%;
+  height: 280px;
+}
+
+/* Irmãos adjacentes (+) */
+/* h3 + p::first-line {
+  color: red;
+} */
+
+/* After/Before */
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: yellow;
+  padding: 3px 8px; /*Para ter paddin precisa ser inline-block*/
+  position: absolute;
+  right: -25px;
+  top: -15px;
+}
