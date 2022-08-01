@@ -1,0 +1,177 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  border: 3px solid black;
+  font-size: 20px;
+  line-height: 1.3;
+  margin: 50px auto;
+  width: 900px;
+  position: relative;
+}
+
+.title {
+  height: 60px;
+  background-color: rgba(241, 236, 236, 0.616);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  word-spacing: 3px;
+}
+
+.shoesImage {
+  width: 250px;
+  height: 275px;
+}
+
+.pTitle {
+  margin: 0;
+  padding: 15px;
+}
+
+/* INFORMAÇÕES DO PRODUTO */
+.price {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  float: left;
+}
+
+.shipping {
+  font-size: 0.7rem;
+  color: grey;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.pShipping {
+  margin-bottom: 50px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+
+.more-info:hover {
+  text-decoration: none;
+}
+
+.prodDetails {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.product-list {
+  list-style-type: square;
+  margin-left: 17px;
+  line-height: 2;
+  font-size: 16px;
+}
+
+/* CARRINHO DE COMPRA */
+.add-cart {
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.add-cart:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-style: none;
+  cursor: pointer;
+  border-top: 3px solid black;
+}
+
+/* BLOCOS DE CORES */
+.container {
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  margin-top: 15px;
+  display: inline-block;
+  /* float: left; */
+}
+
+.black {
+  background-color: #000;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: rgb(231, 231, 0);
+}
+
+.green {
+  background-color: green;
+}
+
+.brown {
+  background-color: brown;
+}
+
+/* SALE */
+.sale {
+  padding: 8px 16px;
+  background-color: red;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: -30px;
+  top: -15px;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* COLUMNS */
+
+.col1 {
+  position: relative;
+  float: left;
+  width: 275px;
+  height: 275px;
+}
+
+.col2 {
+  position: relative;
+  float: left;
+  width: 275px;
+  padding-top: 20px;
+}
+
+.col3 {
+  position: relative;
+  float: right;
+  width: 275px;
+  padding-top: 5px;
+}
