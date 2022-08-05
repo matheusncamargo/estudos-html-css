@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 article {
@@ -26,7 +27,7 @@ article {
 
 .shoesImage {
   width: 250px;
-  height: 275px;
+  height: 100%;
 }
 
 .pTitle {
@@ -38,7 +39,7 @@ article {
 .price {
   font-size: 1.5rem;
   font-weight: bolder;
-  float: left;
+  /* float: left; */
 }
 
 .shipping {
@@ -46,14 +47,12 @@ article {
   color: grey;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  float: right;
+  /* float: right; */
 }
 
-.pShipping {
+/* .pShipping {
   margin-bottom: 50px;
-}
+} */
 
 .more-info:link,
 .more-info:visited {
@@ -65,7 +64,6 @@ article {
 }
 
 .prodDetails {
-  margin-top: 20px;
   margin-bottom: 10px;
   font-size: 1rem;
 }
@@ -73,8 +71,8 @@ article {
 .product-list {
   list-style-type: square;
   margin-left: 17px;
-  line-height: 2;
-  font-size: 16px;
+  line-height: 1.6;
+  font-size: 18px;
 }
 
 /* CARRINHO DE COMPRA */
@@ -98,7 +96,7 @@ article {
 }
 
 /* BLOCOS DE CORES */
-.container {
+.color-container {
   width: 100%;
   height: 40px;
   margin-top: 15px;
@@ -107,9 +105,8 @@ article {
 .square {
   width: 20px;
   height: 20px;
-  margin-right: 12px;
   margin-top: 15px;
-  display: inline-block;
+  /* display: inline-block; */
   /* float: left; */
 }
 
@@ -153,25 +150,51 @@ article {
   text-transform: uppercase;
 }
 
-/* COLUMNS */
-
+/* FLOAT */
+/*
 .col1 {
-  position: relative;
   float: left;
   width: 275px;
   height: 275px;
 }
 
 .col2 {
-  position: relative;
   float: left;
   width: 275px;
   padding-top: 20px;
 }
 
 .col3 {
-  position: relative;
   float: right;
   width: 275px;
   padding-top: 5px;
+}
+
+
+/* NOVO: FLEXBOX */
+.page {
+  display: flex;
+  /* align-items: center; */
+  gap: 40px;
+  margin-bottom: 0;
+}
+
+.pShipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.col2,
+.col3 {
+  /* flex-basis: 300px; */
+  flex: 1;
+  margin-top: 20px;
+}
+
+.color-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
