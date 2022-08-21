@@ -23,7 +23,7 @@ body {
   padding-top: 20px;
   padding-bottom: 10px;
   background-color: rgb(240, 240, 240);
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
 }
 
 nav {
@@ -47,14 +47,13 @@ aside {
   border-bottom: 4px solid rgb(43, 157, 196);
   padding: 40px 20px;
 }
-/*
+
 footer {
   font-size: 16px;
   clear: both;
-  width: 300px;
-  height: 50px;
+  width: 100%;
 }
-*/
+
 /* ELEMENTOS MENORES */
 
 h1,
@@ -97,9 +96,9 @@ p {
   margin-bottom: 15px;
 }
 
-/* .mdnWeb {
+.mdnWeb {
   margin-bottom: 50px;
-} */
+}
 
 .ulMenu {
   list-style: none;
@@ -210,9 +209,8 @@ footer {
 }
 */
 
-/* FLEXBOX LAYOUT */
 /* NOVO: FLEX BOX */
-/*
+
 .header-1 {
   display: flex;
   align-items: center;
@@ -225,7 +223,6 @@ footer {
 }
 
 .author {
-  margin-bottom: 0;
   margin-left: 20px;
 }
 
@@ -245,51 +242,15 @@ footer {
   font-size: 16px;
   font-weight: bold;
 }
+/* CSS GRID */
 
-
- .page {
-  display: flex;
-  gap: 75px;
-  align-items: flex-start;
-  /* 
- Por padrão fica como esticar <ASIDE> Testar para ver comportamento do aside/page  
- */ /*
-}
-
-article {
-  /* flex: 0 0 825px; */
-/* flex: 1; */
-/*Flex 1 - permite aos elementos crescerem o máximo possível dentro do espaço disponível*/ /*
-}
-
-aside {
-  /* DEFAULT
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto; 
-*/
-/*
-  flex: 0 0 300px;
-} */
-
-/* GRID LAYOUT */
-
-.container {
+.page {
   display: grid;
   grid-template-columns: 1fr 300px;
-  column-gap: 75px;
-  row-gap: 50px;
-}
 
-.header-1 {
-  grid-column: 1 / -1;
+  gap: 75px;
+  align-items: start;
+  /* 
+ Por padrão fica como esticar <ASIDE> Testar para ver comportamento do aside/page  
+ */
 }
-
-/* .aside {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
-.footer {
-  grid-column: 1 / -1;
-} */
